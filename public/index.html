@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charSet="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.59f2e898.png" />
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cdn.oaistatic.com/_next/static/media/favicon-32x32.be48395e.png" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://cdn.oaistatic.com/_next/static/media/favicon-16x16.9b8dbb69.png" />
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/utility.css">
+    <meta name="title" content="ChatGPT: Get instant answers, find inspiration, learn something new" />
+    <meta name="description"
+        content="ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place." />
+    <meta name="keywords"
+        content="ai chat,ai,chap gpt,chat gbt,chat gpt 3,chat gpt login,chat gpt website,chat gpt,chat gtp,chat openai,chat,chatai,chatbot gpt,chatg,chatgpt login,chatgpt,gpt chat,open ai,openai chat,openai chatgpt,openai" />
+    <meta property="og:description" content="A conversational AI system that listens, learns, and challenges" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="ChatGPT" />
+    <meta property="og:image" content="https://cdn.oaistatic.com/_next/static/media/chatgpt-share-og.49cbbffe.png" />
+    <meta property="og:url" content="https://chat.openai.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="hamburgerContainer">
+            <img class="hamburger" src="/img/hamburger.svg" alt="hamburger">
+        </div>
+        <div class="left">
+            <div class="close">
+                <img src="/img/close.svg" alt="close" width="30">
+            </div>
+            <div class="new-chat">
+                <div class="flexlogo">
+                    <img src="/img/logo.svg" alt="logo" class="logo">
+                    <p>New chat</p>
+                </div>
+                <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+            <div class="chats">
+                <div class="chat">
+                    <h6>Yesterday</h6>
+                    <p>What is Javascript ?</p>
+                </div>
+                <div class="chat">
+                    <h6>2023</h6>
+                    <p>What is HTML and CSS ?</p>
+                </div>
+            </div>
+            <div class="upgrade">
+                <div class="flexlogo upgrade-flex">
+                    <img src="/img/star.svg" alt="star">
+                    <p class="plan">Upgrade plan<br><span class="plan-text">Get GPT-4, DALL-E, and more</span></p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="flexlogo">
+                    <img src="/profile.gif" alt="profile-image">
+                    <p>Divyansh Goyal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="head">
+                <p>ChatGPT <span>3.5</span> <i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+            <div class="middle">
+                <img src="/img/logo.svg" alt="logo">
+                <p>How can I help you today?</p>
+            </div>
+            <div style="background-color: #212121;">
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-flex">
+                            <div class="content">
+                                <p class="box-h">Plan a tour</p>
+                                <p class="box-d">for architectural photography in Barcelona</p>
+                            </div>
+                            <img src="/img/up-arrow.svg" alt="up-arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-flex">
+                            <div class="content">
+                                <p class="box-h">Tell me a fun fact</p>
+                                <p class="box-d">about the Roman Empire</p>
+                            </div>
+                            <img src="/img/up-arrow.svg" alt="up-arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-flex">
+                            <div class="content">
+                                <p class="box-h">Design a database schema</p>
+                                <p class="box-d">for an online merch store</p>
+                            </div>
+                            <img src="/img/up-arrow.svg" alt="up-arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-flex">
+                            <div class="content">
+                                <p class="box-h">Make a content strategy</p>
+                                <p class="box-d">for a newsletter featuring free local weekend events</p>
+                            </div>
+                            <img src="/img/up-arrow.svg" alt="up-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div id="loading" style="display: none;">
+                    <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none;">
+                    </div>
+                </div>
+                <button id="copy">Copy</button>
+                <div id="answer" style="display: none;"></div>
+                <div class="messagebar">
+                    <input type="text" name="question" id="question" placeholder="Message ChatGPT...">
+                    <img id="generate" src="/img/up-arrow.svg" alt="send" tabindex="0">
+                    <br>
+                </div>
+                <div class="footer">
+                    <p>ChatGPT can make mistakes. Consider checking important information.</p>
+                </div>
+            </div>
+            <div class="help">
+                <img src="/img/question-mark.svg" alt="help">
+            </div>
+        </div>
+    </main>
+
+    <script type="text/Javascript" src="/script.js"></script>
+</body>
